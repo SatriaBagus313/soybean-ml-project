@@ -3,14 +3,14 @@
 **Judul Proyek:**  
 [(Contoh: "Klasifikasi Penyakit Daun Menggunakan CNN", "Prediksi Harga Rumah dengan Machine Learning", "Analisis Sentimen Ulasan Produk")]
 
-**Nama Mahasiswa:** Satria Bagus Al Imanu
-**NIM:** 234311054
-**Program Studi:** Rekayasa Perangkat Lunak  
-**Mata Kuliah:** Data Science
-**Dosen Pengampu:** Gus Nanang Syaifuddiin
-**Tahun Akademik:** 2025/5
-**Link GitHub Repository:** https://github.com/SatriaBagus313/soybean-ml-project
-**Link Video Pembahasan:** [URL Repository]
+**Nama Mahasiswa:** Satria Bagus Al Imanu.
+**NIM:** 234311054.
+**Program Studi:** Rekayasa Perangkat Lunak.  
+**Mata Kuliah:** Data Science.
+**Dosen Pengampu:** Gus Nanang Syaifuddiin.
+**Tahun Akademik:** 2025/5.
+**Link GitHub Repository:** https://github.com/SatriaBagus313/soybean-ml-project.
+**Link Video Pembahasan:** [URL Repository].
 
 ---
 
