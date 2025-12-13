@@ -2,8 +2,8 @@
 *(Isi judul proyek Anda di sini)*
 
 ## 👤 Informasi
-- **Nama:** [...]  
-- **Repo:** [...]  
+- **Nama:** Satria Bagus Al Imanu
+- **Repo:** https://github.com/SatriaBagus313/soybean-ml-project
 - **Video:** [...]  
 
 ---
@@ -106,3 +106,4 @@ project/
 
 # 9. 🔁 Reproducibility
 Gunakan environment:
+
