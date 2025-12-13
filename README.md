@@ -1,5 +1,5 @@
 # 📘 Judul Proyek
-*(Isi judul proyek Anda di sini)*
+*Soybean ML Project*
 
 ## 👤 Informasi
 - **Nama:** Satria Bagus Al Imanu
@@ -28,7 +28,7 @@
 ---
 ## 📁 Struktur Folder
 ```
-project/
+soybean-ml-project/
 │
 ├── data/                   # Dataset (tidak di-commit, download manual)
 │
@@ -52,9 +52,9 @@ project/
 ---
 
 # 3. 📊 Dataset
-- **Sumber:** [...]  
-- **Jumlah Data:** [...]  
-- **Tipe:** [...]  
+- **Sumber:** https://archive.ics.uci.edu/dataset/91/soybean+small
+- **Jumlah Data:** 47
+- **Tipe:** Semua fitur bersifat kategorikal, target kelas penyakit juga kategori
 
 ### Fitur Utama
 | Fitur | Deskripsi |
@@ -106,4 +106,5 @@ project/
 
 # 9. 🔁 Reproducibility
 Gunakan environment:
+
 
