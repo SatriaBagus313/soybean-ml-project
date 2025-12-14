@@ -34,70 +34,68 @@ Pada proyek ini, mahasiswa diharapkan dapat:
 
 ### 2.1 Latar Belakang
 **Isi bagian ini dengan:**
-- Mengapa proyek ini penting?
-- Permasalahan umum pada domain terkait (misal: kesehatan, pendidikan, keuangan, pertanian, NLP, computer vision, dll.)
-- Manfaat proyek untuk pengguna, bisnis, atau penelitian
+Pertanian merupakan salah satu sektor penting yang berperan besar dalam ketahanan pangan. Salah satu tanaman pangan yang banyak dibudidayakan adalah kedelai, yang rentan terhadap berbagai jenis penyakit. Penyakit pada tanaman kedelai dapat menyebabkan penurunan hasil panen dan kerugian ekonomi bagi petani apabila tidak terdeteksi sejak dini.
+Permasalahan umum dalam domain pertanian adalah kesulitan dalam mengidentifikasi jenis penyakit tanaman secara akurat, terutama ketika diagnosis hanya mengandalkan pengamatan manual. Kesalahan diagnosis dapat menyebabkan penanganan yang tidak tepat dan memperparah kondisi tanaman.
+Dengan berkembangnya bidang data science dan machine learning, data historis terkait kondisi tanaman dapat dimanfaatkan untuk membangun sistem klasifikasi penyakit secara otomatis. Model machine learning dan deep learning mampu mempelajari pola kompleks dari data dan memberikan prediksi yang lebih konsisten dibandingkan metode manual.
+
+- Membantu proses identifikasi penyakit tanaman kedelai secara otomatis.
+- Memberikan perbandingan performa antara model baseline, advanced machine learning, dan deep learning.
+- Menjadi referensi penerapan machine learning dan deep learning pada data tabular di bidang pertanian.
 - Studi literatur atau referensi ilmiah (minimal 1–2 sumber wajib)
 
 **Contoh referensi (berformat APA/IEEE):**
-> Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
+> Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
+> Quinlan, J. R. (1986). Induction of decision trees. Machine Learning, 1(1), 81–106.
 
 **[Jelaskan konteks dan latar belakang proyek]**
 
 ## 3. BUSINESS UNDERSTANDING / PROBLEM UNDERSTANDING
 ### 3.1 Problem Statements
-Tuliskan 2–4 pernyataan masalah yang jelas dan spesifik.
-
-**Contoh (universal):**
-1. Model perlu mampu memprediksi nilai target dengan akurasi tinggi
-2. Sistem harus dapat mengidentifikasi pola pada citra secara otomatis
-3. Dataset memiliki noise sehingga perlu preprocessing yang tepat
-4. Dibutuhkan model deep learning yang mampu belajar representasi fitur kompleks
-
-**[Tulis problem statements Anda di sini]**
+1. Bagaimana membangun model yang mampu mengklasifikasikan penyakit tanaman kedelai secara akurat berdasarkan data tabular?
+2. Bagaimana pengaruh preprocessing data terhadap performa model machine learning?
+3. Model mana yang memberikan performa terbaik antara baseline, advanced machine learning, dan deep learning?
+4. Apakah model deep learning mampu meningkatkan performa dibandingkan model konvensional?
 
 ### 3.2 Goals
-
-Tujuan harus spesifik, terukur, dan selaras dengan problem statement.
-**Contoh tujuan:**
-1. Membangun model ML untuk memprediksi variabel target dengan akurasi > 80%
-2. Mengukur performa tiga pendekatan model (baseline, advanced, deep learning)
-3. Menentukan model terbaik berdasarkan metrik evaluasi yang relevan
-4. Menghasilkan sistem yang dapat bekerja secara reproducible
-
-**[Tulis goals Anda di sini]**
+1. Membangun sistem klasifikasi penyakit tanaman kedelai dengan akurasi di atas 80%.
+2. Mengimplementasikan dan membandingkan tiga pendekatan model (baseline, advanced ML, dan deep learning).
+3. Menentukan model terbaik berdasarkan metrik evaluasi klasifikasi.
+4. Menghasilkan proyek yang dapat direproduksi dan terdokumentasi dengan baik.
 
 ### 3.3 Solution Approach
 
 Mahasiswa **WAJIB** menggunakan minimal **tiga model** dengan komposisi sebagai berikut:
 #### **Model 1 – Baseline Model**
-Model sederhana sebagai pembanding dasar.
 **Pilihan model:**
 - Linear Regression (untuk regresi)
 - Logistic Regression (untuk klasifikasi)
 - K-Nearest Neighbors (KNN)
 - Decision Tree
-- Naive Bayes
+- Naive Bayes✅
 
-**[Jelaskan model baseline yang Anda pilih dan alasannya]**
+**Model 1 – Baseline Model Naive Bayes**
+Model baseline yang digunakan adalah Naive Bayes.
+Model ini dipilih karena sederhana, cepat, dan sering digunakan sebagai pembanding awal pada tugas klasifikasi data kategorikal.
+
+
 
 #### **Model 2 – Advanced / ML Model**
-Model machine learning yang lebih kompleks.
 **Pilihan model:**
-- Random Forest
+- Random Forest✅
 - Gradient Boosting (XGBoost, LightGBM, CatBoost)
 - Support Vector Machine (SVM)
 - Ensemble methods
 - Clustering (K-Means, DBSCAN) - untuk unsupervised
 - PCA / dimensionality reduction (untuk preprocessing)
 
-**[Jelaskan model advanced yang Anda pilih dan alasannya]**
+**Model 2 – Advanced / ML Model Rsndom Forest**
+Model advanced yang digunakan adalah Random Forest Classifier.
+Random Forest mampu menangani fitur kategorikal dengan baik, mengurangi overfitting, serta memiliki performa yang lebih stabil dibandingkan model tunggal.
 
 #### **Model 3 – Deep Learning Model (WAJIB)**
-Model deep learning yang sesuai dengan jenis data.
 **Pilihan Implementasi (pilih salah satu sesuai dataset):**
 **A. Tabular Data:**
-- Multilayer Perceptron (MLP) / Neural Network
+- Multilayer Perceptron (MLP) / Neural Network✅
 - Minimum: 2 hidden layers
 - Contoh: prediksi harga, klasifikasi binary/multiclass
 
@@ -132,28 +130,31 @@ Model deep learning yang sesuai dengan jenis data.
 - ❌ Model tidak di-train (hanya define arsitektur)
 - ❌ Tidak ada evaluasi pada test set
 
-**[Jelaskan model deep learning yang Anda pilih dan alasannya]**
+**Model 3 – Deep Learning Model Multilayer Perceptron (MLP) (WAJIB)**
+Model deep learning yang digunakan adalah Multilayer Perceptron (MLP).
+MLP dipilih karena dataset berbentuk tabular, sehingga arsitektur neural network fully-connected paling sesuai untuk mempelajari representasi fitur kompleks.
 
 ---
 
 ## 4. DATA UNDERSTANDING
 ### 4.1 Informasi Dataset
 **Sumber Dataset:**  
-[Sebutkan sumber: Kaggle, UCI ML Repository, atau sumber lain dengan URL]
+UCI Machine Learning Repository
+https://archive.ics.uci.edu/dataset/91/soybean+small
 
 **Deskripsi Dataset:**
-- Jumlah baris (rows): [angka]
-- Jumlah kolom (columns/features): [angka]
-- Tipe data: [Tabular / Image / Text / Time Series / Audio / Video]
-- Ukuran dataset: [MB/GB]
-- Format file: [CSV / JSON / Images / TXT / etc.]
-
+- Jumlah baris (rows): 47
+- Jumlah kolom (columns/features): 36 fitur + 1 label
+- Tipe data: Tabular
+- Ukuran dataset: < 1 MB
+- Format file: CSV
+  
 ### 4.2 Deskripsi Fitur
 Jelaskan setiap fitur/kolom yang ada dalam dataset.
 **Contoh tabel:**
 | Nama Fitur | Tipe Data | Deskripsi | Contoh Nilai |
 |------------|-----------|-----------|--------------|
-| id | Integer | ID unik data | 1, 2, 3 |
+| date | Integer | ID unik data | 1, 2, 3 |
 | age | Integer | Usia (tahun) | 25, 30, 45 |
 | income | Float | Pendapatan (juta) | 5.5, 10.2 |
 | category | Categorical | Kategori produk | A, B, C |
@@ -164,17 +165,22 @@ Jelaskan setiap fitur/kolom yang ada dalam dataset.
 **[Buat tabel deskripsi fitur Anda di sini]**
 
 ### 4.3 Kondisi Data
-
-Jelaskan kondisi dan permasalahan data:
-
-- **Missing Values:** [Ada/Tidak, berapa persen?]
-- **Duplicate Data:** [Ada/Tidak, berapa banyak?]
-- **Outliers:** [Ada/Tidak, pada fitur apa?]
-- **Imbalanced Data:** [Ada/Tidak, rasio kelas?]
-- **Noise:** [Jelaskan jika ada]
-- **Data Quality Issues:** [Jelaskan jika ada masalah lain]
-
+- **Missing Values:** Tidak ada
+- **Duplicate Data:** Tidak ditemukan
+- **Outliers:** Tidak relevan (data kategorikal
+- **Imbalanced Data:** Ada perbedaan distribusi kelas, namun masih dapat ditangani
+- **Noise:** Minimal
+- **Data Quality Issues:** Tidak ditemukan masalah signifikan
+  
 ### 4.4 Exploratory Data Analysis (EDA) - (**OPSIONAL**)
+Pada proyek ini dilakukan:
+1. Visualisasi distribusi kelas
+2. Confusion matrix
+3. Plot training history model deep learning
+
+Insight utama:
+1. Distribusi kelas relatif tidak seimbang.
+2. Model kompleks mampu mempelajari pola lebih baik.
 
 **Requirement:** Minimal 3 visualisasi yang bermakna dan insight-nya.
 **Contoh jenis visualisasi yang dapat digunakan:**
@@ -215,34 +221,16 @@ Jelaskan kondisi dan permasalahan data:
 ---
 
 ## 5. DATA PREPARATION
-
-Bagian ini menjelaskan **semua** proses transformasi dan preprocessing data yang dilakukan.
 ### 5.1 Data Cleaning
 **Aktivitas:**
-- Handling missing values
-- Removing duplicates
-- Handling outliers
-- Data type conversion
-**Contoh:**
-```
-Missing Values:
-- Fitur 'age' memiliki 50 missing values (5% dari data)
-- Strategi: Imputasi dengan median karena distribusi skewed
-- Alasan: Median lebih robust terhadap outliers dibanding mean
-```
-
-**[Jelaskan langkah-langkah data cleaning yang Anda lakukan]**
-
-
+- Tidak terdapat missing value
+- Tidak ada data duplikat
+- Semua fitur dikonversi ke format numerik menggunakan encoding
 
 ### 5.2 Feature Engineering
 **Aktivitas:**
-- Creating new features
-- Feature extraction
-- Feature selection
-- Dimensionality reduction
-
-**[Jelaskan feature engineering yang Anda lakukan]**
+- Tidak dilakukan penambahan fitur baru
+- Fokus pada pemrosesan fitur kategorikal yang sudah tersedia
 
 ### 5.3 Data Transformation
 
