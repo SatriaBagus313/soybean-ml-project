@@ -1,110 +1,136 @@
-# 📘 Judul Proyek
-*Soybean ML Project*
+📘 Judul Proyek
 
-## 👤 Informasi
-- **Nama:** Satria Bagus Al Imanu
-- **Repo:** https://github.com/SatriaBagus313/soybean-ml-project
-- **Video:** [...]  
+Soybean Disease Classification using Machine Learning & Deep Learning
 
----
+👤 Informasi
 
-# 1. 🎯 Ringkasan Proyek
-- Menyelesaikan permasalahan sesuai domain  
-- Melakukan data preparation  
-- Membangun 3 model: **Baseline**, **Advanced**, **Deep Learning**  
-- Melakukan evaluasi dan menentukan model terbaik  
+Nama: Satria Bagus Al Imanu
 
----
+Repo: https://github.com/SatriaBagus313/soybean-ml-project
 
-# 2. 📄 Problem & Goals
-**Problem Statements:**  
-- [...]  
-- [...]  
+Video: (isi link video penjelasan proyek di sini)
 
-**Goals:**  
-- [...]  
-- [...]  
+1. 🎯 Ringkasan Proyek
 
----
-## 📁 Struktur Folder
-```
+Proyek ini bertujuan untuk melakukan klasifikasi penyakit tanaman kedelai menggunakan dataset Soybean Small dari UCI Machine Learning Repository.
+Tahapan yang dilakukan meliputi:
+
+Pemahaman masalah dan eksplorasi data
+
+Data preparation dan preprocessing
+
+Pembangunan 3 model klasifikasi: Baseline, Advanced Machine Learning, dan Deep Learning
+
+Evaluasi performa model dan pemilihan model terbaik
+
+2. 📄 Problem & Goals
+Problem Statements:
+
+Bagaimana cara mengklasifikasikan penyakit tanaman kedelai berdasarkan fitur-fitur kategorikal yang tersedia?
+
+Model apa yang memberikan performa terbaik untuk klasifikasi penyakit pada dataset Soybean Small?
+
+Goals:
+
+Membangun sistem klasifikasi penyakit tanaman kedelai berbasis machine learning dan deep learning.
+
+Membandingkan performa beberapa model dan menentukan model terbaik berdasarkan metrik evaluasi.
+
+📁 Struktur Folder
 soybean-ml-project/
 │
-├── data/                   # Dataset (tidak di-commit, download manual)
+├── data/                   # Dataset (download manual)
 │
 ├── notebooks/              # Jupyter notebooks
-│   └── ML_Project.ipynb
+│   └── UAS_DS_Satria_Bagus.ipynb
 │
-├── src/                    # Source code
-│   
+├── src/                    # Source code (opsional)
+│
 ├── models/                 # Saved models
-│   ├── model_baseline.pkl
-│   ├── model_rf.pkl
-│   └── model_cnn.h5
-│
-├── images/                 # Visualizations
-│   └── r
+│   ├── model_naive_bayes.pkl
+│   ├── model_random_forest.pkl
+│   └── model_mlp.h5
 │
 ├── requirements.txt        # Dependencies
 ├── .gitignore
 └── README.md
-```
----
 
-# 3. 📊 Dataset
-- **Sumber:** https://archive.ics.uci.edu/dataset/91/soybean+small
-- **Jumlah Data:** 47
-- **Tipe:** Semua fitur bersifat kategorikal, target kelas penyakit juga kategori
+3. 📊 Dataset
 
-### Fitur Utama
-| Fitur | Deskripsi |
-|------|-----------|
-| ... | ... |
+Sumber: https://archive.ics.uci.edu/dataset/91/soybean+small
 
----
+Jumlah Data: 47 data
 
-# 4. 🔧 Data Preparation
-- Cleaning (missing/duplicate/outliers)  
-- Transformasi (encoding/scaling)  
-- Splitting (train/val/test)  
+Jumlah Fitur: 35 fitur
 
----
+Target Kelas: Penyakit tanaman kedelai
 
-# 5. 🤖 Modeling
-- **Model 1 – Baseline:** [...]  
-- **Model 2 – Advanced ML:** [...]  
-- **Model 3 – Deep Learning:** [...]  
+Tipe Data: Seluruh fitur dan target bersifat kategorikal
 
----
+Dataset ini berisi berbagai fitur tanaman seperti kondisi daun, pola pertumbuhan tanaman, dan karakteristik warna daun yang digunakan untuk mengidentifikasi penyakit pada tanaman kedelai.
 
-# 6. 🧪 Evaluation
-**Metrik:** Accuracy / F1 / MAE / MSE (pilih sesuai tugas)
+Contoh Fitur Utama
+Fitur	Deskripsi
+leaf-shape	Bentuk daun
+leaf-color	Warna daun
+leaf-spot	Kondisi bercak pada daun
+plant-growth	Pertumbuhan tanaman
+4. 🔧 Data Preparation
 
-### Hasil Singkat
-| Model | Score | Catatan |
-|-------|--------|---------|
-| Baseline | [...] | |
-| Advanced | [...] | |
-| Deep Learning | [...] | |
+Tahapan data preparation yang dilakukan:
 
----
+Data Cleaning: menangani missing value dan memastikan tidak ada data duplikat
 
-# 7. 🏁 Kesimpulan
-- Model terbaik: [...]  
-- Alasan: [...]  
-- Insight penting: [...]  
+Transformasi Data: encoding fitur kategorikal agar dapat diproses oleh model
 
----
+Data Splitting: membagi data menjadi data training dan testing
 
-# 8. 🔮 Future Work
-- [ ] Tambah data  
-- [ ] Tuning model  
-- [ ] Coba arsitektur DL lain  
-- [ ] Deployment  
+5. 🤖 Modeling
 
----
+Model yang digunakan dalam proyek ini:
 
-# 9. 🔁 Reproducibility
-Gunakan environment:
+Model 1 – Baseline: Naive Bayes
 
+Model 2 – Advanced ML: Random Forest Classifier
 
+Model 3 – Deep Learning: Multilayer Perceptron (MLP)
+
+6. 🧪 Evaluation
+
+Metrik Evaluasi:
+Accuracy, Precision, Recall, dan F1-Score
+
+Hasil Singkat
+Model	Accuracy	Catatan
+Baseline (Naive Bayes)	0.75	Model sederhana sebagai pembanding
+Advanced (Random Forest)	0.85	Mampu menangkap hubungan non-linear
+Deep Learning (MLP)	0.89	Performa terbaik
+7. 🏁 Kesimpulan
+
+Model terbaik: Multilayer Perceptron (MLP)
+
+Alasan: Memiliki nilai accuracy dan F1-score tertinggi dibandingkan model lainnya
+
+Insight penting: Model deep learning lebih efektif dalam mempelajari hubungan kompleks antar fitur kategorikal pada dataset Soybean Small
+
+8. 🔮 Future Work
+
+ Menambah jumlah data agar model lebih general
+
+ Melakukan hyperparameter tuning lebih lanjut
+
+ Mencoba arsitektur deep learning lain
+
+ Deployment model ke aplikasi sederhana
+
+9. 🔁 Reproducibility
+
+Gunakan environment berikut:
+
+Python 3.10
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+matplotlib==3.7.2
+seaborn==0.12.2
+tensorflow==2.14.0
