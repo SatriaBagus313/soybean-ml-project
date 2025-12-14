@@ -1,17 +1,13 @@
-📘 Judul Proyek
-
+**📘Judul Proyek**
 Soybean Disease Classification using Machine Learning & Deep Learning
 
-👤 Informasi
+**👤Informasi**
 
 Nama: Satria Bagus Al Imanu
-
 Repo: https://github.com/SatriaBagus313/soybean-ml-project
+Video: https://www.youtube.com/watch?v=APqRxn0c080
 
-Video: (isi link video penjelasan proyek di sini)
-
-1. 🎯 Ringkasan Proyek
-
+**1. 🎯 Ringkasan Proyek**
 Proyek ini bertujuan untuk melakukan klasifikasi penyakit tanaman kedelai menggunakan dataset Soybean Small dari UCI Machine Learning Repository.
 Tahapan yang dilakukan meliputi:
 
@@ -23,7 +19,7 @@ Pembangunan 3 model klasifikasi: Baseline, Advanced Machine Learning, dan Deep L
 
 Evaluasi performa model dan pemilihan model terbaik
 
-2. 📄 Problem & Goals
+**2. 📄 Problem & Goals**
 Problem Statements:
 
 Bagaimana cara mengklasifikasikan penyakit tanaman kedelai berdasarkan fitur-fitur kategorikal yang tersedia?
@@ -134,3 +130,4 @@ scikit-learn==1.3.0
 matplotlib==3.7.2
 seaborn==0.12.2
 tensorflow==2.14.0
+
