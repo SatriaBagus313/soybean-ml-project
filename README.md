@@ -113,7 +113,7 @@ Model yang digunakan dalam proyek ini:
 ---
 
 # 9. 🔁 Reproducibility
-Gunakan environment:
+Mengguunakan environment:
 Python 3.10
 numpy==1.24.3
 pandas==2.0.3
@@ -121,4 +121,5 @@ scikit-learn==1.3.0
 matplotlib==3.7.2
 seaborn==0.12.2
 tensorflow==2.14.0
+
 
